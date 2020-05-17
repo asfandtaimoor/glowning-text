@@ -1,0 +1,86 @@
+body ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+}
+
+body ul li {
+  padding: 12px 30px;
+  border: 1px;
+  -webkit-animation: animate 2.5s linear infinite;
+          animation: animate 2.5s linear infinite;
+}
+
+body ul li:not(:first-child) {
+  border-left: 0;
+}
+
+body ul li:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+body ul li:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+body ul li:nth-child(3) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+body ul li:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+body ul li:nth-child(5) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+body ul li:nth-child(6) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+@-webkit-keyframes animate {
+  from {
+    color: red;
+    border-color: solid red;
+    -webkit-box-shadow: 10px 0 10px 5px rgba(223, 19, 19, 0.85);
+            box-shadow: 10px 0 10px 5px rgba(223, 19, 19, 0.85);
+  }
+  to {
+    color: blue;
+    border-color: blue;
+    border-color: solid blue;
+    -webkit-box-shadow: 10px 0 10px 5px rgba(6, 10, 219, 0.85);
+            box-shadow: 10px 0 10px 5px rgba(6, 10, 219, 0.85);
+  }
+}
+
+@keyframes animate {
+  from {
+    color: red;
+    border-color: solid red;
+    -webkit-box-shadow: 10px 0 10px 5px rgba(223, 19, 19, 0.85);
+            box-shadow: 10px 0 10px 5px rgba(223, 19, 19, 0.85);
+  }
+  to {
+    color: blue;
+    border-color: blue;
+    border-color: solid blue;
+    -webkit-box-shadow: 10px 0 10px 5px rgba(6, 10, 219, 0.85);
+            box-shadow: 10px 0 10px 5px rgba(6, 10, 219, 0.85);
+  }
+}
+/*# sourceMappingURL=style.css.map */
